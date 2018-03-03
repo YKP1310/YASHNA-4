@@ -1,0 +1,8 @@
+program: client.o mystack.o
+   gcc -o program client.o mystack.o
+
+client.o: client.c mystack.h
+   gcc -c client.c
+
+mystack.o mystack.c mystack.h
+   gcc -c mystack.c
